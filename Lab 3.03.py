@@ -277,8 +277,8 @@ while(len(deck) > 0):
         war = True
         war_score = war_score + 2
 
-    print(p1_score)
-    print(p2_score)
+    print(p1_name + ": " + str(p1_score))
+    print(p2_name + ": " + str(p2_score))
 
     if war and (compare_cards(p1_card,p2_card)) == 1:
         print(p1_name + str(war_score) + "cards")
@@ -286,7 +286,7 @@ while(len(deck) > 0):
         war_score = 0
         war = False
     elif war and (compare_cards(p1_card,p2_card)) == -1:
-        str(print("p2_name" + war_score + "cards"))
+        print(p2_name+ str(war_score) + "cards")
         p2_score = p2_score + war_score 
         war_score = 0
         war = False
